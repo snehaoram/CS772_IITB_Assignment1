@@ -35,12 +35,12 @@ def main():
     #st.image('Screenshot_2024-02-13_232956.png', caption='Neural Network Architecture')
     html_temp = """
     <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Palindrome Detector App</h2>
+    <h2 style="color:white;text-align:center;">Streamlit Palindrome Check App</h2>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
     for i in range(4):
-      st.write(i+1, " fold accuracy (#inputs = 256): ", acc_1[i])
+      st.write(i+1, " fold accuracy (#inputs = 256): ", acc1[i])
 
     st.write("Whole dataset accuracy (#inputs = 1024): ", acc)
 
