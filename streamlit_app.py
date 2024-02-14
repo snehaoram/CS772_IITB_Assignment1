@@ -48,14 +48,14 @@ def main():
     st.write(param)
     
     num = st.text_input("Enter number: ", "Type here")
-    #inp = np.array([int(digit) for digit in num])
-    #inp = inp.reshape(1, 10)
-    #k = predict(param["W1"], param["W2"], param["b1"], param["b2"], inp)
+    inp = np.array([int(digit) for digit in num])
+    inp = inp.reshape(1, 10)
+    k = predict(param["W1"], param["W2"], param["b1"], param["b2"], inp)
 
-    #if k == 1:
-     # st.write('Class1, Palindrome')
-    #else:
-     # st.write('Class0, Not Palindrome')
+    if k == 1:
+      st.write('Class1, Palindrome')
+    else:
+      st.write('Class0, Not Palindrome')
 
 
 if __name__ == '__main__':
