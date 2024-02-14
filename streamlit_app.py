@@ -38,7 +38,7 @@ def main():
     <h2 style="color:white;text-align:center;">Streamlit Palindrome Detector App</h2>
     </div>
     """
-    st.markdown(html_temp, unsafe_Allow_html=True)
+    st.markdown(html_temp, unsafe_allow_html=True)
     for i in range(4):
       st.write(i+1, " fold accuracy (#inputs = 256): ", acc_1[i])
 
