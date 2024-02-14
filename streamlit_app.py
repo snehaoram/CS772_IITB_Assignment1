@@ -53,11 +53,11 @@ def main():
     result = 0
     if st.button("Predict"):
         k = predict(param["W1"], param["W2"], param["b1"], param["b2"], inp)
-
-    if k == 1:
-      st.write('Class1, Palindrome')
-    else:
-      st.write('Class0, Not Palindrome')
+    st.success("The input is {}".format(k))
+    #if k == 1:
+      #st.write('Class1, Palindrome')
+    #else:
+      #st.write('Class0, Not Palindrome')
 
 
 if __name__ == '__main__':
