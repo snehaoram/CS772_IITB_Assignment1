@@ -32,7 +32,7 @@ def predict(W1, W2, b1, b2, input):
 
 
 def main():
-    st.title('CS772 Assignment 1')
+    st.title('Assignment_1')
     #st.image('Screenshot_2024-02-13_232956.png', caption='Neural Network Architecture')
     html_temp = """
     <div style="background-color:tomato;padding:10px">
@@ -57,9 +57,8 @@ def main():
         
         binary_flag = True
         for i in num:
-            if i not in [0,1]:
+            if i != '0' and i != '1':
                 binary_flag = False
-                #st.write('Input is not binary, enter again')
         
         if not binary_flag or not length_flag:
             st.write("Invalid Input")
